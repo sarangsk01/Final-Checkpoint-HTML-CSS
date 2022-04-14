@@ -1,0 +1,529 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+h1{
+    font-size: 3rem;
+    color: $white;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+h5{
+    font-size: 1rem;
+}
+h6{
+    font-size: 0.5rem;
+}
+.line-height{
+    line-height: 1.2;
+}
+
+body{
+    font-family: $font;
+    background-color: $white;
+}
+.container {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+#toggle, .bars {
+    display: none;
+}
+header {
+    padding: 0.9rem 0;
+}
+.top-menu a {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+    color: $blue;
+    padding: 1rem 1.4rem;
+}
+
+.top-menu a:hover, .top-menu a.active {
+    color: $pink;
+}
+a {
+    text-decoration: none;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: $aqua;
+}
+.banner{
+    background: url(../media/geneva-gloval-website-hero-design.jpg) center fixed no-repeat;
+    color: white;
+    background-size: cover;
+    width: 100%;
+    padding: 12rem 0;
+}
+.banner-text{
+    font-size: 1rem;
+    color: $grey;
+    font-weight: 900;
+}
+.btn  {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+}
+
+.btn-1 {
+    background-color: $aqua;
+    padding: 0.8rem 3.2rem;
+    border-radius: 2.4rem;
+    color: $brown;
+    &:hover {
+        background-color: $pink;
+    }
+}
+.about{
+    background: center fixed no-repeat;
+    background-color: paleturquoise;
+    background-size: cover;
+    width: 100%;
+    padding: 12rem 0;
+}
+.about-text{
+    font-size: 1rem;
+    color: $black;
+}
+.btn-2 {
+    background-color: $pink;
+    font-size: 0.9rem;
+    padding: 0.6rem 2rem;
+    border-radius: 0.5rem;
+    color: $blue;
+    &:hover {
+        background-color: $aqua;
+    }
+}
+.about li{
+    padding: 1rem 0;
+}
+/* Services */
+.our-services {
+    background-color: skyblue;
+    height: 50vh;
+}
+.our-services .article {
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+    border-radius: 1.2rem;
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+    margin-top: 5em;
+    padding-top: 0;
+    &:hover{
+        background-color: $crimson;
+    }
+}
+
+.our-services .article .icon {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 2rem 0;
+    color: $blue;
+}
+.article-text{
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.footer {
+    font-size: 2rem;
+    padding-top: 12rem;
+}
+
+.footer .logo {
+    font-size: 1.6rem;
+    color: $black;
+    font-weight: 600;
+}
+.footer address {
+    font-size: 1rem;
+    color: $black;
+    font-weight: 600;
+}
+.btn-3 {
+    background-color: $pink;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    padding: 0.6rem 2rem;
+    border-radius: 0.5rem;
+    color: $blue;
+    &:hover {
+        background-color: $brown;
+    }
+}
+.footer h4 {
+    font-size: 1.3rem;
+}
+
+.footer .menu li a {
+    font-size: 1rem;
+    color: $black;
+    font-weight: 600;
+}
+
+.footer .newsletter p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+}
+
+.footer .nav {
+    padding: 1rem;
+}
+
+
+.footer .menu h4 {
+    position: relative;
+    margin-left: -2rem;
+}
+
+.footer .newsletter .form-box {
+    border-radius: 2rem;
+    padding: 1rem;
+    border: 1px solid black;
+    box-shadow: 0 0 .2rem #EA5433;
+}
+
+.footer .newsletter .wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer .menu a:hover {
+    color: $crimson;
+}
+
+.footer small {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1;
+    color: $black;
+    padding: 1rem;
+}
+.footer .social a {
+    color: white;
+    font-size: 1rem;
+    background-color: $aqua;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 .4rem;
+    &:hover{
+        background-color: $pink;
+    }
+}
+
+.footer .social {
+    background-color: white;
+}
+
+.top-btn {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 1.4rem;
+    background-color: $pink;
+    width: 2rem;
+    height: 2rem;
+    border-radius: .4rem;
+    color: white;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    z-index: 99999;
+}
+.nav-menu{
+    background-color: rgba(233, 230, 230, 0.9);
+}
+
+
+/* Details Page */
+.details-main{
+    background: linear-gradient(rgba(grey,0.9),rgba(0,0,0,0.2)),url(../media/why-choose-us.jpg) center fixed no-repeat;
+    color: white;
+    background-size: cover;
+    width: 100%;
+    padding: 12rem 0;
+}
+.details article .txt {
+    padding: 1.5rem;
+}
+
+.details article span {
+    margin-right: 2rem;
+    font-size: 1rem;
+    color: var(--txt);
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.details article span i {
+    margin-right: .4rem;
+}
+
+.details article .btn {
+    background-color: $pink;
+    font-size: 1.3rem;
+    padding: .6rem 2rem;
+    &:hover{
+        background-color: $crimson;
+    }
+}
+.details article .space20 {
+    padding-top: 1.6rem;
+}
+
+.details article {
+    margin-bottom: 5rem;
+}
+
+.indicator {
+    padding-bottom: 1.6rem;
+}
+
+.indicator a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border: .1rem solid rgba(0,0,0,0.1);
+    margin: 0 .4rem;
+    color: var(--txt);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    &:hover{
+        background-color: $pink;
+    }
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1080px) {
+    .banner {
+        padding: 16rem 0;
+    }
+    .about {
+        margin-top: -14em;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        max-width: 708px;
+        padding: 0 2rem;
+    }
+
+    .mobile-padding-0 {
+        padding: 0;
+    }
+    /* mobi flex */
+    .mobile-50 {
+        flex: 0 1 48% !important;
+    }
+    .mobile-25 {
+        flex: 0 1 24%;
+    }
+    .mobile-100 {
+        flex: 0 1 100%;
+    }
+    .mobile-padding-bottom-0 {
+        padding-bottom: 0 !important;
+    }
+    /* Header */
+    header {
+        padding: 4rem 0;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    header .menu {
+        display: none;
+    }
+    header #toggle:checked ~ .menu {
+        display: inline-block !important;
+    }
+    .top-menu {
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 8rem;
+        bottom: 0;
+        height: 100vh;
+        z-index: 999999;
+    }
+
+    .bars {
+        display: block;
+        color: var(--primary);
+        font-size: 2.4rem;
+        position: absolute;
+        right: 8rem;
+        z-index: 99999999;
+    }
+
+    header .logo {
+        position: absolute;
+        z-index: 99999999;
+    }
+
+    .top-menu a {
+        color: white;
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    .top-menu a:hover, .top-menu a.active {
+        color: var(--accent);
+    }
+
+    .top-menu ul {
+        background-color: rgba(99,85,81, 0.9);
+    }
+
+    .inactive {
+        display: none;
+    }
+    /* About */
+
+    .banner {
+        padding: 32rem 0;
+    }
+
+    /* Services */
+
+    .services {
+        margin-top: -24em;
+    }
+
+    .services .mobi100 {
+        margin-bottom: 3rem;
+    }
+
+    /* Footer */
+
+    .footer .nav-menu .nav {
+        flex: 0 1 48%;
+    }
+
+    .footer .copyright .mobi100{
+        text-align: center;
+    }
+    .footer .social .flex {
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+
+
+    .details article {
+        flex: 0 1 48%;
+    }
+
+
+    .top-btn {
+        font-size: 2rem;
+        width: 5rem;
+        height: 5rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    html {
+        font-size: 6px;
+    }
+
+    .container {
+        max-width: 340px;
+        padding: 0 1rem;
+    }
+
+    .footer .nav-menu .nav {
+        flex: 0 1 100% !important;
+    }
+
+    .details article {
+        flex: 0 1 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 360px) {
+    .container {
+        max-width: 280px;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    
+    .container {
+        max-width: 240px;
+        padding: 0 2rem;
+    }
+}
+
+/* Padding */
+
+.padding-all {
+    padding: 2.4rem;
+}
+
+.padding-60 {
+    padding: 6rem 0;
+} 
+
+.padding-40 {
+    padding: 4rem 0;
+}
+
+.padding-30 {
+    padding: 3rem 0;
+}
+
+.padding-20 {
+    padding: 2rem 0;
+}
+
+.padding-10 {
+    padding: 1rem 0;
+}
+
+.padding-bottom-0 {
+    padding-bottom: 0 !important;
+}
+
+.padding-top-0 {
+    padding-top: 0 !important;
+}
+.text-center{
+    text-align: center;
+}
